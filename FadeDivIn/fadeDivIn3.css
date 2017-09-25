@@ -1,0 +1,37 @@
+body{
+    height:3000px;
+    width:100%;
+}
+
+.container {
+	width: 100%;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.image {
+width: 100%;
+margin-top: 20px;
+}
+
+.image img {
+    width:100%;
+    max-width: 700px;
+}
+
+h2{
+
+    text-align: center;
+    background-color: grey;
+    max-width: 100%;
+
+}
+
+h3 {
+    text-align: center;
+    background-color: grey;
+    max-width: 100%;
+}
+.text{
+    margin-top: 10px;
+}

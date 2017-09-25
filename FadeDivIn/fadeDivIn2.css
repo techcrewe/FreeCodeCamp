@@ -3,37 +3,22 @@ body{
 }
 
 .container {
-	max-width: 100%;
-	margin: 0 auto;
-/* 	line-height: 200%;
-	letter-spacing: 2px; */
+	width: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
 }
-.topdiv {
-    position:relative;
-    top:20px;
-    height:100%;
-    background-color:#09f;
-    text-align:center;
-    font-size:24px;
-}
-.fadethisdiv {
-    height:100%;
-    background-color:#36afff;
-    text-align:center;
-    font-size:24px;
-    visibility:hidden;
-}
-#changing_image {
+
+.changing_image {
+
 position: fixed;
 top:100px;
 left:10px;
 width: 100%;
-border: 3px solid #73AD21;
-border-radius: 0px;
-max-width: 1000px;
+/* border: 3px solid #73AD21;
+border-radius: 0px; */
 }
-img {
-    position: absolute;
+.pic img {
+    position: fixed;
     text-align: center;
     padding:5px;
     width:100%
@@ -44,23 +29,31 @@ h2 {
     /* max-width: auto; */
     
 }
-#title {
+/* #title {
     position: fixed;
     width: 100%;
     text-align: center;
     background-color: grey;
-    max-width: inherit;
-}
-.scrolling_text{
+    max-width: 100%;
+} */
+h2 {
     position: fixed;
-    top: 50px;
     width: 100%;
     text-align: center;
-    max-width: inherit;
+    background-color: grey;
+    max-width: 100%;
+}
+.scrolling_text{
+    margin-top: 10px;
+/*     position: relative;
+    top: 500px;
+    width: 100%;
+    text-align: center;
+    max-width: 100%; */
 
 }
-.text1{
+/* .text1{
     position: relative;
     overflow:hidden;
     width:100%;
-}
+} */
