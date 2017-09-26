@@ -1,37 +1,53 @@
-body{
-    height:3000px;
+html, body{
+    /* height:3000px; */
+    height: 100%;
     width:100%;
 }
 
 .container {
 	width: 100%;
     margin: 0 auto;
-    max-width: 400px;
+    max-width: 700px;
+}
+
+.title-wrapper {
+    height: 100%;
+}
+
+.title{
+height: 80%;
+width:100%;
+max-width: 700px;
+position: fixed;
 }
 
 .image {
 width: 100%;
-margin-top: 20px;
+/* margin-top: 10px; */
 }
 
 .image img {
-    width:100%;
-    max-width: 700px;
+width:100%;
+/* max-width: 700px; */
 }
 
-h2{
 
+h2, h3 {
     text-align: center;
     background-color: grey;
-    max-width: 100%;
-
+    width: 100%;
 }
 
 h3 {
     text-align: center;
-    background-color: grey;
-    max-width: 100%;
+    background-color: green;
+    width: 100%;
+    max-width: 700px;
+
 }
-.text{
-    margin-top: 10px;
-}
+/* .text{
+    height: 100%;
+    width: 100%;
+
+} */
+
