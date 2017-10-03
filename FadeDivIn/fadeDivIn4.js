@@ -41,6 +41,8 @@
 //   }
 // });
 
+
+/* THIS WORKS - DO NOT DELETE*/
 $(document).ready(function() {
   $(".text").css("top", $(".title").height() + 10);
 });
@@ -52,8 +54,8 @@ $(window).on("resize", function() { //Make it responsive
 $(window).on("load",function() {
   function fade(pageLoad) {
   	var windowBottom = $(window).scrollTop() + $(window).innerHeight();
-    var min = 0.3;
-    var max = 0.7;
+    var min = 0;
+    var max = 1;
     var threshold = 0.01;
     
     $(".fade").each(function() {
@@ -62,11 +64,13 @@ $(window).on("load",function() {
       
       /* If the element is completely within bounds of the window, fade it in */
       if (objectBottom < windowBottom) { //object comes into view (scrolling down)
-        if ($(this).css("opacity")<=min+threshold || pageLoad) {$(this).fadeTo(500,max);}
+        if ($(this).css("opacity")<=min+threshold || pageLoad) {$(this).fadeTo(200,max);}
       } else { //object goes out of view (scrolling up)
-        if ($(this).css("opacity")>=max-threshold || pageLoad) {$(this).fadeTo(500,min);}
+        if ($(this).css("opacity")>=max-threshold || pageLoad) {$(this).fadeTo(200,min);}
       }
     });
   } fade(true); //fade elements on page-load
   $(window).scroll(function(){fade(false);}); //fade elements on scroll
 });
+/* ------------- */
+
